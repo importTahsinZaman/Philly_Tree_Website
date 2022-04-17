@@ -1,0 +1,103 @@
+body {
+  background: gray;
+}
+
+#background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: black;
+}
+
+#label-container {
+  z-index: 1;
+}
+
+#preview {
+  z-index: 1;
+}
+
+#file-input {
+  z-index: 1;
+}
+
+#background-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  z-index: 2;
+}
+
+button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  font-weight: 400;
+  font-size: 11.5em;
+  bottom: 3px;
+  right: 15px;
+  z-index: 2;
+}
+
+p {
+  position: absolute;
+  width: 641px;
+  height: 405px;
+  left: 79px;
+  top: 150px;
+
+  font-weight: 400;
+  font-size: 1.2em;
+  line-height: 35px;
+
+  color: #ffffff;
+  z-index: 2;
+}
+
+@media (max-width: 991px) {
+  button {
+    font-size: 8em;
+    top: -280px;
+    left: 3px;
+  }
+  #background-img {
+    width: 100%;
+    height: 50%;
+  }
+  p {
+    font-size: 1em;
+    width: 80%;
+    height: 30%;
+    top: 380px;
+    line-height: 30px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 550px) {
+  button {
+    font-size: 4.4em;
+    bottom: 3px;
+    left: 0px;
+  }
+  #background-img {
+    width: 100%;
+    height: 50%;
+  }
+  p {
+    left: 40px;
+    font-size: 1em;
+    width: 80%;
+    height: 30%;
+    line-height: 20px;
+  }
+}

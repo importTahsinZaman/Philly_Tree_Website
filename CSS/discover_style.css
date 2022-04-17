@@ -1,0 +1,604 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  padding: 0 0 0 0px;
+  margin: 0 0 0 0px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.533;
+  box-sizing: border-box;
+  color: #6d6e6e;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+td,
+tr,
+th,
+div,
+header,
+section,
+footer,
+p,
+form,
+input,
+textarea,
+select,
+fieldset {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.533;
+  color: #6d6e6e;
+  margin: 0 0 0 0px;
+  padding: 0 0 0 0px;
+  border: none;
+}
+h1 {
+  font-size: 30px;
+  color: #6d6e6e;
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: 1.5px;
+}
+h1 strong {
+  font-weight: 300;
+  color: #7d968f;
+}
+h2 {
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 1.533;
+  letter-spacing: 1px;
+}
+h2 strong {
+  font-weight: 400;
+  color: #7d968f;
+}
+
+ul,
+li {
+  margin: 0 0 0 0px;
+  padding: 0 0 0 0px;
+  list-style: none;
+  display: block;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a img {
+  border: none;
+  display: block;
+}
+
+.theNavigator {
+  position: fixed;
+  z-index: 99;
+  left: 155px;
+  right: 155px;
+  bottom: 130px;
+}
+.theNavigator .theLine {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+.theNavigator ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.theNavigator li {
+  position: relative;
+  width: 6px;
+  height: 6px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+.theNavigator li a {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 50%;
+  display: block;
+}
+.theNavigator li .maskHighlight {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.4);
+  pointer-events: none;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+.theNavigator li.active .maskHighlight {
+  background: rgba(255, 255, 255, 0.4);
+  transition: 0.2s;
+}
+.theNavigator li .textInd {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  text-align: center;
+  color: #ffffff;
+  pointer-events: none;
+  opacity: 1;
+  transition: 0.3s;
+}
+.theNavigator li.active .textInd {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+#secIndex {
+  width: 100%;
+  height: 100%;
+}
+#secIndex .logoHolder img {
+  filter: brightness(400%);
+}
+#secIndex #btnMenu .bar1,
+#secIndex #btnMenu .bar2 {
+  background-color: #ffffff;
+}
+#secIndex footer {
+  filter: brightness(400%);
+}
+#secIndex .videoHolder {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #181816;
+  overflow: hidden;
+}
+#secIndex .videoHolder video,
+#secIndex .videoHolder iframe,
+#secIndex .videoHolder img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  opacity: 0.45;
+  pointer-events: none;
+}
+#secIndex section {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+#secIndex section h1 {
+  margin-bottom: 20px;
+  font-size: 50px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  color: #ffffff;
+}
+#secIndex section h2 {
+  width: 60%;
+  margin-bottom: 20px;
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 3px;
+  color: #ffffff;
+}
+#secIndex section h1 span {
+  color: transparent;
+  -webkit-text-stroke: 1px #ffffff;
+  text-stroke: 1px #ffffff;
+  display: block;
+}
+#secIndex section p {
+  font-size: 15px;
+  text-align: justify;
+  color: #ffffff;
+}
+#secIndex section .contentHolder {
+  position: absolute;
+  top: 48%;
+  left: 155px;
+  transform: translateY(-50%);
+  width: 50%;
+}
+#secIndex section .contentHolder a.btnCTA {
+  margin-top: 45px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: underline;
+  color: #ffffff;
+  display: block;
+}
+#secIndex section .contentHolder a.btnCTA02 {
+  margin-top: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: underline;
+  color: #ffffff;
+  display: block;
+}
+#secIndex section .contentHolder a.btnCTA img,
+#secIndex section .contentHolder a.btnCTA02 img {
+  display: inline-block;
+  height: 13px;
+  padding-left: 5px;
+}
+#secIndex section .bigText {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  font-size: 30vw;
+  font-weight: 300;
+  line-height: 1;
+  color: transparent;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px #ffffff;
+  text-stroke: 1px #ffffff;
+  opacity: 0.3;
+  white-space: nowrap;
+}
+#secIndex section .imgWrapper {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  object-fit: cover;
+  overflow: hidden;
+}
+#secIndex section .imgWrapper img {
+  width: 100%;
+  object-fit: cover;
+}
+#secIndex .sec01 .contentHolder {
+  position: absolute;
+  top: 50%;
+  left: 155px;
+  width: 35%;
+}
+#secIndex .sec01 .space20 {
+  margin-top: 20px;
+  text-decoration: underline;
+}
+#secIndex .sec02 {
+  background-color: #0c0c0c;
+}
+#secIndex .sec03 {
+  background: #0c0c0c;
+}
+#secIndex .sec04 {
+  background: #0c0c0c;
+}
+#secIndex .sec05 .contentHolder {
+  position: absolute;
+  top: 55%;
+  left: 155px;
+  width: 35%;
+}
+
+#secProgram {
+  width: 100%;
+  height: 100%;
+}
+#secProgram footer {
+  margin: 50px 70px 50px 70px;
+  position: static;
+}
+#secProgram .secCover {
+  margin-top: 100px;
+}
+#secProgram h1 {
+  margin-bottom: 40px;
+  width: 60%;
+}
+#secProgram h1 span {
+  margin-bottom: 15px;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  display: block;
+}
+#secProgram h3 {
+  margin-bottom: 20px;
+}
+#secProgram h4 {
+  margin-bottom: 15px;
+}
+#secProgram h4 span {
+  margin-top: 5px;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  display: block;
+}
+#secProgram p {
+  margin-bottom: 25px;
+  text-align: justify;
+}
+#secProgram li {
+  text-align: justify;
+}
+
+@media screen and (min-width: 200px) and (max-width: 959px) {
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 13px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+
+  aside .secContent {
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    right: 50px;
+    bottom: 120px;
+    transform: none;
+    width: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .theNavigator {
+    left: 50px;
+    right: 50px;
+    bottom: 120px;
+    display: none;
+  }
+
+  #secIndex .videoHolder video,
+  #secIndex .videoHolder iframe,
+  #secIndex .videoHolder img {
+    width: auto;
+    height: 110%;
+  }
+  #secIndex section {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+  }
+  #secIndex section h1 {
+    font-size: 30px;
+  }
+  #secIndex section h2 {
+    width: 60%;
+    font-size: 30px;
+  }
+  #secIndex section .contentHolder {
+    top: 55%;
+    left: 40px;
+    right: 40px;
+    width: 75%;
+  }
+  #secIndex section .contentHolder a.btnCTA {
+    margin-top: 45px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    color: #ffffff;
+    display: block;
+  }
+  #secIndex section .contentHolder a.btnCTA02 {
+    margin-top: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    color: #ffffff;
+    display: block;
+  }
+  #secIndex section .contentHolder a.btnCTA img,
+  #secIndex section .contentHolder a.btnCTA02 img {
+    display: inline-block;
+    height: 13px;
+    padding-left: 5px;
+  }
+  #secIndex section .bigText {
+    font-size: 40vw;
+  }
+  #secIndex section .imgWrapper {
+    width: 100%;
+    height: 50%;
+    right: 0;
+    left: 0;
+  }
+  #secIndex .sec01 .contentHolder {
+    top: 50%;
+    left: 50px;
+    right: 50px;
+    width: auto;
+  }
+
+  #secProgram footer {
+    margin: 35px 35px 35px 35px;
+  }
+  #secProgram h1 {
+    width: auto;
+  }
+
+  #secProgram .secIntro {
+    padding: 200px 35px 0px 35px;
+  }
+  #secProgram .secIntro02 {
+    padding: 50px 35px 50px 35px;
+  }
+  #secProgram .secIntro p,
+  #secProgram .secIntro02 p,
+  #secProgram .secDesc p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 560px) and (max-width: 749px) {
+  h1 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 13px;
+  }
+  #secIndex section p {
+    font-size: 13px;
+  }
+  #secIndex section .imgWrapper {
+    width: 50%;
+    height: 100%;
+    right: 0;
+    left: auto;
+  }
+  #secIndex section h2 {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  #secIndex section .contentHolder {
+    left: 50px;
+    width: 75%;
+  }
+  #secIndex section .contentHolder a.btnCTA {
+    margin-top: 15px;
+    font-size: 13px;
+  }
+  #secIndex section .contentHolder a.btnCTA02 {
+    font-size: 13px;
+  }
+
+  #secProgram .secIntro p {
+    font-size: 13px;
+  }
+  #secProgram li {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 959px) {
+  .theNavigator {
+    left: 80px;
+    right: 80px;
+    bottom: 160px;
+    display: block;
+  }
+  #secIndex section .contentHolder {
+    top: 50%;
+    left: 80px;
+    right: 80px;
+    width: 75%;
+  }
+  #secIndex .sec01 .contentHolder {
+    left: 80px;
+    right: 80px;
+  }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1299px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  td,
+  tr,
+  th,
+  div,
+  header,
+  section,
+  footer,
+  p,
+  form,
+  input,
+  textarea,
+  select,
+  fieldset {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+
+  .theNavigator {
+    left: 120px;
+    right: 120px;
+    bottom: 100px;
+  }
+
+  #secIndex .videoHolder video,
+  #secIndex .videoHolder iframe,
+  #secIndex .videoHolder img {
+    width: 135%;
+    height: 135%;
+  }
+  #secIndex section h1 {
+    font-size: 30px;
+  }
+  #secIndex section h2 {
+    width: 60%;
+    font-size: 30px;
+  }
+  #secIndex section .contentHolder {
+    left: 120px;
+    width: 50%;
+  }
+  #secIndex section .contentHolder a.btnCTA {
+    margin-top: 30px;
+  }
+  #secIndex section .imgWrapper img {
+    width: 120%;
+  }
+  #secIndex .sec01 .contentHolder {
+    left: 120px;
+    width: 45%;
+  }
+  #secIndex .sec05 .contentHolder {
+    left: 120px;
+    width: 45%;
+  }
+
+  #secProgram footer {
+    margin: 50px 45px 40px 30px;
+  }
+  #secProgram h1 {
+    width: 75%;
+  }
+  #secProgram h1 span {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 5000px) {
+  .secCover {
+    height: 50vh;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 450px) {
+  #secIndex section h2 {
+    width: 100%;
+  }
+}

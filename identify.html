@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/minimum_styles.css" />
+    <link rel="stylesheet" href="CSS/identify_style.css" />
+    <title>trees@Philly</title>
+  </head>
+
+  <body>
+    <div class="intro">
+      <div class="intro-text">
+        <h1 class="hide">
+          <span class="int-text"></span>
+        </h1>
+      </div>
+    </div>
+
+    <div class="slider"></div>
+    <div id="btnMenu">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+    </div>
+    <aside class="nav-hide">
+      <div class="secContent">
+        <ul class="secMainNavi">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li>
+            <a href="#" style="text-decoration: line-through"
+              >Identify a Tree</a
+            >
+          </li>
+          <li><a href="trees_directory.html">Trees Directory</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+
+        <div class="clearBoth"></div>
+      </div>
+    </aside>
+
+    <input id="file-input" type="file" accept="image/png, image/jpeg" />
+    <img id="preview" />
+    <div id="label-container"></div>
+
+    <div id="background"></div>
+    <img id="background-img" src="Images/identify_page_background.jpg" alt="" />
+    <button onclick="document.getElementById('file-input').click();">
+      Identify
+    </button>
+    <p>
+      Over the past couple hundred years, arborists have designed ways to
+      classify and analyze leaves. This is done to identify which tree they came
+      from and gain insight into the life cycle of that tree and other important
+      information to further research. Traditionally, the classification process
+      consisted of manually matching the shapes and colors of leaves. However,
+      I've trained a machine learning leaf classification model to speed up the
+      process and allow even those without experience to pursue their arboreal
+      interests. This model was trained on over 5000 images of 20 street tree
+      species native to Philadelphia. For best results, use an image of your
+      leaf on a white background. Click the large "Identify" to get started!
+    </p>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"
+      integrity="sha512-kVlGhj2qFy+KBCFuvjBJTGUMxbdqJKs4yK2jh0e0VPhWUPiPC87bzm4THmaaIee3Oj7j6sDpTTgm2EPPiESqBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(function () {
+        $("#btnMenu").click(function () {
+          $(".secSubNavi").hide();
+          $(".secContD").show();
+          $("#btnMenu").toggleClass("change");
+          $("#btnMenu").addClass("colorWhite");
+          $(".secMainNavi li").each(function (i) {
+            var $li = $(this);
+            setTimeout(function () {
+              $li.toggleClass("naviSlideIn");
+            }, i * 50); // delay 100 ms
+          });
+          $("aside").fadeToggle("1000");
+          $(".secContD").toggleClass("naviSlideIn");
+        });
+      });
+
+      //Intro slider:
+      const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+
+      tl.to(".slider", { y: "-100%", duration: 1.5, delay: 0.1 });
+      tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
+    </script>
+    <script src="Scripts/identify.js"></script>
+    <script src="Scripts/find_species.js"></script>
+  </body>
+</html>

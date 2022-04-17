@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="initial-scale = 1.0, user-scalable = no" />
+
+    <title>Discover</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link rel="stylesheet" href="CSS/minimum_styles.css" />
+    <link rel="stylesheet" href="CSS/discover_style.css" />
+  </head>
+
+  <body>
+    <aside class="nav-hide">
+      <div class="secContent">
+        <ul class="secMainNavi">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="identify.html">Identify a Tree</a></li>
+          <li>
+            <a href="#" style="text-decoration: line-through">Discover</a>
+          </li>
+          <li><a href="trees_directory.html">Trees Directory</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+
+        <div class="clearBoth"></div>
+      </div>
+    </aside>
+    <div id="secIndex">
+      <div id="btnMenu">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+      </div>
+      <footer>
+        <div class="clearBoth"></div>
+      </footer>
+      <div class="theNavigator">
+        <div class="theLine"></div>
+        <ul>
+          <li>
+            <div
+              class="maskHighlight"
+              data-0="opacity: 1;"
+              data-100p="opacity: 0;"
+            ></div>
+            <div class="textInd" data-0="opacity: 1;" data-100p="opacity: 0;">
+              1/6
+            </div>
+          </li>
+          <li>
+            <div
+              class="maskHighlight"
+              data-200p="opacity: 0;"
+              data-300p="opacity: 1;"
+              data-400p="opacity: 0;"
+            ></div>
+            <div
+              class="textInd"
+              data-200p="opacity: 0;"
+              data-300p="opacity: 1;"
+              data-400p="opacity: 0;"
+            >
+              2/6
+            </div>
+          </li>
+          <li>
+            <div
+              class="maskHighlight"
+              data-600p="opacity: 0;"
+              data-700p="opacity: 1;"
+              data-800p="opacity: 0;"
+            ></div>
+            <div
+              class="textInd"
+              data-600p="opacity: 0;"
+              data-700p="opacity: 1;"
+              data-800p="opacity: 0;"
+            >
+              3/6
+            </div>
+          </li>
+          <li>
+            <div
+              class="maskHighlight"
+              data-1000p="opacity: 0;"
+              data-1100p="opacity: 1;"
+              data-1200p="opacity: 0;"
+            ></div>
+            <div
+              class="textInd"
+              data-1000p="opacity: 0;"
+              data-1100p="opacity: 1;"
+              data-1200p="opacity: 0;"
+            >
+              4/6
+            </div>
+          </li>
+          <li>
+            <div
+              class="maskHighlight"
+              data-1400p="opacity: 0;"
+              data-1500p="opacity: 1;"
+              data-1600p="opacity: 0;"
+            ></div>
+            <div
+              class="textInd"
+              data-1400p="opacity: 0;"
+              data-1500p="opacity: 1;"
+              data-1600p="opacity: 0;"
+            >
+              5/6
+            </div>
+          </li>
+          <li>
+            <div
+              class="maskHighlight"
+              data-1600p="opacity: 0;"
+              data-1700p="opacity: 1;"
+            ></div>
+            <div
+              class="textInd"
+              data-1600p="opacity: 0;"
+              data-1700p="opacity: 1;"
+            >
+              6/6
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="videoHolder">
+        <video
+          id="myVideo"
+          width="100%"
+          height="100%"
+          playsinline
+          autoplay
+          data-autoplay
+          loop
+          muted
+        >
+          <source src="Videos/discover_background_video.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <section
+        id="secIntro"
+        class="sec01"
+        data-0="transform:translateX(0%)"
+        data-100p="transform:translateX(-100%)"
+      >
+        <div class="contentHolder">
+          <h1><span>Why Care </span>About Trees?</h1>
+          <p>
+            Trees are an essential part of life all over the world. They're
+            beautiful, they provide us food and oxygen, and they're a key part
+            of any ecosystem. From the wild creatures of the Amazon Rainforest
+            to busy humans in bustling cities, we're all dependent on the role
+            trees play in our communities.
+          </p>
+          <p class="space20">Scroll Down To Learn More &darr;</p>
+        </div>
+      </section>
+      <section
+        id="secAbout"
+        class="sec02"
+        data-0="transform:translateX(100%)"
+        data-100p=""
+        data-200p="transform:translateX(0%)"
+        data-300p=""
+        data-400p="transform:translateX(100%)"
+      >
+        <div
+          class="imgWrapper"
+          data-100="right:-150%"
+          data-250p="right:0%"
+          data-300p=""
+          data-400p="right:-150%"
+        >
+          <img src="Images/discover_sec2.jpg" />
+        </div>
+        <div
+          class="bigText"
+          data-0="left:0%"
+          data-100p="left:-100%"
+          data-200p="left:-30%"
+          data-400p="left:35%"
+        >
+          Environment
+        </div>
+        <div
+          class="contentHolder"
+          data-0="margin-left: 1000px;"
+          data-290=""
+          data-200p="margin-left: 0;"
+          data-300p="opacity:1;"
+          data-400p="opacity:0;"
+        >
+          <h2>Environmental Roles</h2>
+          <p>
+            Trees play a significant role in our environment. They absorb carbon
+            dioxide from the air and produce oxygen essential to life on Earth.
+            Furthermore, they improve air quality, making them a key component
+            of any city. Trees ensure that despite the air pollution caused by
+            vehicles and other polluters, people can still breathe and live
+            safely. Also, trees serve as shelter to the many critters that
+            choose to inhabit them. The next time you walk by a large tree, look
+            up and try to spot all the wildlife that have made that tree home.
+          </p>
+        </div>
+      </section>
+      <section
+        id="secProgram"
+        class="sec03"
+        data-0="transform:translateX(100%)"
+        data-500p=""
+        data-600p="transform:translateX(0%)"
+        data-700p=""
+        data-800p="transform:translateX(100%)"
+      >
+        <div
+          class="imgWrapper"
+          data-500="right:-150%"
+          data-650p="right:0%"
+          data-700p=""
+          data-800p="right:-150%"
+        >
+          <img src="Images/discover_sec3.jpg" />
+        </div>
+        <div
+          class="bigText"
+          data-0="left:400%"
+          data-400="left:300%"
+          data-500p="left:-100%"
+          data-600p="left:-30%"
+          data-800p="left:35%"
+        >
+          Community
+        </div>
+        <div
+          class="contentHolder"
+          data-0="margin-left: 1000px;"
+          data-590=""
+          data-600p="margin-left: 0;"
+          data-700p="opacity:1;"
+          data-800p="opacity:0;"
+        >
+          <h2>Community Roles</h2>
+          <p>
+            The presence of trees in our communities brings quality to our
+            lives. Trees make our cities aesthetically pleasing, and they add an
+            essence of nature to our urban infrastructure. Our streets,
+            playgrounds, and parks are adorned with trees that create a peaceful
+            atmosphere, encouraging outdoor activities with family and friends.
+          </p>
+        </div>
+      </section>
+      <section
+        id="secTeacher"
+        class="sec03"
+        data-0="transform:translateX(100%)"
+        data-900p=""
+        data-1000p="transform:translateX(0%)"
+        data-1100p=""
+        data-1200p="transform:translateX(100%)"
+      >
+        <div
+          class="imgWrapper"
+          data-900="right:-150%"
+          data-1050p="right:0%"
+          data-1100p=""
+          data-1200p="right:-150%"
+        >
+          <img src="Images/discover_sec4.jpg" />
+        </div>
+        <div
+          class="bigText"
+          data-0="left:600%"
+          data-800="left:500%"
+          data-900p="left:-100%"
+          data-1000p="left:-30%"
+          data-1200p="left:35%"
+        >
+          Philly
+        </div>
+        <div
+          class="contentHolder"
+          data-0="margin-left: 1000px;"
+          data-990=""
+          data-1000p="margin-left: 0;"
+          data-1100p="opacity:1;"
+          data-1200p="opacity:0;"
+        >
+          <h2>Trees in Philadelphia</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+            temporibus esse, nemo fuga magni similique voluptatum odit in
+            recusandae, totam, sapiente velit. Adipisci, enim minima praesentium
+            dicta a ab nemo impedit reprehenderit, unde repellat recusandae
+            repudiandae sequi consequuntur suscipit porro.
+          </p>
+        </div>
+      </section>
+      <section
+        id="secEvents"
+        class="sec03"
+        data-0="transform:translateX(100%)"
+        data-1300p=""
+        data-1400p="transform:translateX(0%)"
+        data-1500p=""
+        data-1600p="transform:translateX(100%)"
+      >
+        <div
+          class="imgWrapper"
+          data-1300="right:-150%"
+          data-1450p="right:0%"
+          data-1500p=""
+          data-1600p="right:-150%"
+        >
+          <img src="Images/discover_sec5.jpg" />
+        </div>
+        <div
+          class="bigText"
+          data-0="left:800%"
+          data-1200="left:700%"
+          data-1300p="left:-100%"
+          data-1400p="left:-30%"
+          data-1500p="left:35%"
+        >
+          Danger
+        </div>
+        <div
+          class="contentHolder"
+          data-0="margin-left: 1000px;"
+          data-1390=""
+          data-1400p="margin-left: 0;"
+          data-1500p="opacity:1;"
+        >
+          <h2>Trees in Danger</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit
+            quaerat nobis optio reprehenderit illo laborum deserunt eius
+            repellat magnam neque, modi ad dolore repellendus suscipit fugiat a
+            obcaecati accusamus dolor natus minima ducimus perferendis. Optio
+            cumque veniam exercitationem sint omnis.
+          </p>
+        </div>
+      </section>
+      <section
+        id="secContactUs"
+        class="sec01"
+        data-0="transform:translateX(100%)"
+        data-1650p=""
+        data-1700p="transform:translateX(0%)"
+      >
+        <div class="contentHolder">
+          <h2>Identify your leaf!</h2>
+          <p>
+            If you're walking the streets of Philly and find an interesting
+            leaf, click identify below to find out which tree it came from!
+            You'll be able to learn fun facts about the tree and get a glimpse
+            into its history and significance.
+          </p>
+          <br />
+          <p>
+            <a href="identify.html" title="" class="btnCTA">Identify</a>
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <div class="intro">
+      <div class="intro-text">
+        <h1 class="hide">
+          <span class="int-text"></span>
+        </h1>
+      </div>
+    </div>
+    <div class="slider"></div>
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"
+      integrity="sha512-kVlGhj2qFy+KBCFuvjBJTGUMxbdqJKs4yK2jh0e0VPhWUPiPC87bzm4THmaaIee3Oj7j6sDpTTgm2EPPiESqBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"
+      integrity="sha512-A2+khatRDWHUE2VUtN4xUTkr1nc4YfDBw9Sg3ea6x0aRPfpcYieDZji4D2edDHy/yF5NsYzP7kL8sSM8s5EqCw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="Scripts/discover.js"></script>
+  </body>
+</html>
