@@ -23,8 +23,6 @@
           <li><a href="trees_directory.html">Trees Directory</a></li>
           <li><a href="#">About</a></li>
         </ul>
-
-        <div class="clearBoth"></div>
       </div>
     </aside>
 
@@ -79,7 +77,6 @@
       $(function () {
         $("#btnMenu").click(function () {
           $(".secSubNavi").hide();
-          $(".secContD").show();
           $("#btnMenu").toggleClass("change");
           $("#btnMenu").addClass("colorWhite");
           $(".secMainNavi li").each(function (i) {
@@ -89,7 +86,6 @@
             }, i * 50); // delay 100 ms
           });
           $("aside").fadeToggle("1000");
-          $(".secContD").toggleClass("naviSlideIn");
         });
       });
 

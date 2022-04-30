@@ -18,7 +18,7 @@ function scroll_to_tree(class_name) {
 }
 
 function check_scroll() {
-  if (getCookie("tree") != "") {
+  if (getCookie("tree") != null) {
     element_id = getCookie("tree");
     element = document.getElementById(element_id);
     element.scrollIntoView();
