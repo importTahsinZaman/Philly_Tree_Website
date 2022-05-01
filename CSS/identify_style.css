@@ -1,103 +1,58 @@
 body {
-  background: gray;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  overflow: hidden;
 }
 
-#background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: black;
-}
-
-#label-container {
-  z-index: 1;
-}
-
+#file-input,
+#label-container,
 #preview {
-  z-index: 1;
-}
-
-#file-input {
-  z-index: 1;
-}
-
-#background-img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 45%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 1;
-  z-index: 2;
+  display: none;
+  overflow: hidden;
 }
 
 button {
-  background-color: Transparent;
-  background-repeat: no-repeat;
-  border: none;
+  position: fixed;
   cursor: pointer;
-  color: white;
-  position: absolute;
-  font-weight: 400;
-  font-size: 11.5em;
-  bottom: 3px;
-  right: 15px;
-  z-index: 2;
+  font-size: 1.7em;
+  background: rgba(255, 2555, 255, 0.8);
+  padding: 8px 35px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: 0.2s;
+  z-index: 3;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button:hover {
+  letter-spacing: 6px;
+}
+
+#background-image {
+  height: 100vh;
+  background-image: url(../Images/identify_page_background.jpg);
+  opacity: 0.6;
+  overflow: hidden;
+  background-size: 110%, 110%;
+  top: 0px;
+  left: 0px;
 }
 
 p {
   position: absolute;
-  width: 641px;
-  height: 405px;
-  left: 79px;
-  top: 150px;
-
-  font-weight: 400;
-  font-size: 1.2em;
-  line-height: 35px;
-
-  color: #ffffff;
-  z-index: 2;
-}
-
-@media (max-width: 991px) {
-  button {
-    font-size: 8em;
-    top: -280px;
-    left: 3px;
-  }
-  #background-img {
-    width: 100%;
-    height: 50%;
-  }
-  p {
-    font-size: 1em;
-    width: 80%;
-    height: 30%;
-    top: 380px;
-    line-height: 30px;
-    font-weight: 500;
-  }
-}
-
-@media (max-width: 550px) {
-  button {
-    font-size: 4.4em;
-    bottom: 3px;
-    left: 0px;
-  }
-  #background-img {
-    width: 100%;
-    height: 50%;
-  }
-  p {
-    left: 40px;
-    font-size: 1em;
-    width: 80%;
-    height: 30%;
-    line-height: 20px;
-  }
+  color: rgb(196, 196, 196);
+  z-index: 3;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.235em;
+  max-width: 45%;
 }

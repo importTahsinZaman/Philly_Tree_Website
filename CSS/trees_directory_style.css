@@ -122,11 +122,6 @@ p {
   max-width: 57%;
 }
 
-@media (max-width: 991px) {
-  p {
-  }
-}
-
 @media (max-width: 830px) {
   .img2,
   .img3 {
