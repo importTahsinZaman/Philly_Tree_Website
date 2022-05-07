@@ -71,7 +71,7 @@ aside {
   z-index: 122;
   top: 0;
   left: 0;
-  background: url(../Images/bg-menu.jpg) no-repeat center center #010001;
+  background: #010001;
   background-attachment: fixed;
   background-size: cover;
   width: 100%;

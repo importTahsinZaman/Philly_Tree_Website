@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/logo.jpeg" />
     <link rel="stylesheet" href="CSS/minimum_styles.css" />
     <link rel="stylesheet" href="CSS/identify_style.css" />
-    <title>trees@Philly</title>
+    <title>trees@Philly - Identify</title>
   </head>
   <body>
     <div class="intro">
@@ -73,10 +74,9 @@
     ></script>
 
     <script>
+      //Nav Menu
       $(function () {
         $("#btnMenu").click(function () {
-          $(".secSubNavi").hide();
-          $(".secContD").show();
           $("#btnMenu").toggleClass("change");
           $("#btnMenu").addClass("colorWhite");
           $(".secMainNavi li").each(function (i) {
@@ -86,7 +86,6 @@
             }, i * 50); // delay 100 ms
           });
           $("aside").fadeToggle("1000");
-          $(".secContD").toggleClass("naviSlideIn");
         });
       });
 
@@ -96,6 +95,7 @@
       tl.to(".slider", { y: "-100%", duration: 1.5, delay: 0.1 });
       tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
 
+      //Makes background image move based on mouse position
       $("body").mousemove(function (a) {
         var mouseX = (a.pageX * -1) / 20;
         var mouseY = (a.pageY * -1) / 25;
