@@ -598,6 +598,9 @@ a img {
 }
 
 @media screen and (min-width: 200px) and (max-width: 450px) {
+  p {
+    font-size: 12px !important;
+  }
   #secIndex section h2 {
     width: 100%;
   }
