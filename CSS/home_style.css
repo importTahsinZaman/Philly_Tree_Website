@@ -6,7 +6,7 @@
   top: calc(50% -100px);
   left: calc(50% -100px);
   border-radius: 50%;
-  background: url(../images/philly_pic.jpg);
+  background: url(../Images/philly_pic.jpg);
   opacity: 0.9;
   background-size: cover;
   background-attachment: fixed;
