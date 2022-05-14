@@ -4,6 +4,13 @@ const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 tl.to(".slider", { y: "-100%", duration: 1.5, delay: 0.1 });
 tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
 
+//Preloader:
+var loader = document.getElementById("preloader");
+
+window.addEventListener("load", function () {
+  loader.style.display = "none";
+});
+
 // Expand / Collapse Menu
 $(function () {
   $("#btnMenu").click(function () {

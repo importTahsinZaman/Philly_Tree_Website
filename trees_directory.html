@@ -11,6 +11,7 @@
   </head>
 
   <body>
+    <div id="preloader"></div>
     <div class="intro">
       <div class="intro-text">
         <h1 class="hide">
@@ -550,6 +551,13 @@
       referrerpolicy="no-referrer"
     ></script>
     <script>
+      //Preloader:
+      var loader = document.getElementById("preloader");
+
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+
       // Nav Menu
       $(function () {
         $("#btnMenu").click(function () {

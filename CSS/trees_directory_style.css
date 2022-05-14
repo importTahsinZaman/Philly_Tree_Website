@@ -13,6 +13,18 @@ section {
   position: relative;
 }
 
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000 url(loading2.gif) no-repeat center center;
+  background-size: 10%;
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+  transition: display 200ms;
+}
+
 h1 {
   position: absolute;
 }
