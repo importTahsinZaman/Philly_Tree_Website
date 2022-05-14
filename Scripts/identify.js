@@ -1,3 +1,34 @@
+//Nav Menu
+$(function () {
+  $("#btnMenu").click(function () {
+    $("#btnMenu").toggleClass("change");
+    $("#btnMenu").addClass("colorWhite");
+    $(".secMainNavi li").each(function (i) {
+      var $li = $(this);
+      setTimeout(function () {
+        $li.toggleClass("naviSlideIn");
+      }, i * 50); // delay 100 ms
+    });
+    $("aside").fadeToggle("1000");
+  });
+});
+
+//Intro slider:
+const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+
+tl.to(".slider", { y: "-100%", duration: 1.5, delay: 0.1 });
+tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
+
+//Makes background image move based on mouse position
+$("body").mousemove(function (a) {
+  var mouseX = (a.pageX * -1) / 20;
+  var mouseY = (a.pageY * -1) / 25;
+  $("#background-image").css(
+    "background-position",
+    mouseX + "px " + mouseY + "px"
+  );
+});
+
 //Classification Model:
 const input = document.querySelector('input[type = "file"]');
 
