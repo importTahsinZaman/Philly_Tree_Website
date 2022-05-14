@@ -6,11 +6,15 @@ tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
 
 //Preloader:
 var loader = document.getElementById("preloader");
-var hamburger = document.getElementById("btnMenu");
 
 window.addEventListener("load", function () {
-  loader.style.display = "none";
-  hamburger.style.display = "block";
+  tl.fromTo(
+    "#preloader",
+    { opacity: 1 },
+    { opacity: 0, display: "none", duration: 1 }
+  );
+
+  tl.fromTo("#btnMenu", { opacity: 0 }, { opacity: 1, duration: 0.5 }, "-=0.5");
 });
 
 // Expand / Collapse Menu
