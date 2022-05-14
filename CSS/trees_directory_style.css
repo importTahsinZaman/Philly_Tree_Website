@@ -14,7 +14,7 @@ section {
 }
 
 #btnMenu {
-  display: none;
+  opacity: 0;
 }
 
 #preloader {

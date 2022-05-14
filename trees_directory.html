@@ -551,15 +551,6 @@
       referrerpolicy="no-referrer"
     ></script>
     <script>
-      //Preloader:
-      var loader = document.getElementById("preloader");
-      var hamburger = document.getElementById("btnMenu");
-
-      window.addEventListener("load", function () {
-        loader.style.display = "none";
-        hamburger.style.display = "block";
-      });
-
       // Nav Menu
       $(function () {
         $("#btnMenu").click(function () {
@@ -577,6 +568,21 @@
 
       //Intro slider:
       const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+
+      //Preloader:
+      var loader = document.getElementById("preloader");
+
+      window.addEventListener("load", function () {
+        tl.fromTo("#preloader", { opacity: 1 }, { opacity: 0, duration: 1 });
+        loader.style.display = "none";
+
+        tl.fromTo(
+          "#btnMenu",
+          { opacity: 0 },
+          { opacity: 1, duration: 0.5 },
+          "-=0.5"
+        );
+      });
 
       tl.to(".slider", { y: "-100%", duration: 1.5, delay: 0.1 });
       tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
