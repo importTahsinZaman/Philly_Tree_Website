@@ -11,6 +11,10 @@ body {
   color: #6d6e6e;
 }
 
+#btnMenu {
+  display: none;
+}
+
 #preloader {
   position: fixed;
   top: 0;

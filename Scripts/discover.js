@@ -6,9 +6,11 @@ tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
 
 //Preloader:
 var loader = document.getElementById("preloader");
+var hamburger = document.getElementById("btnMenu");
 
 window.addEventListener("load", function () {
   loader.style.display = "none";
+  hamburger.style.display = "block";
 });
 
 // Expand / Collapse Menu

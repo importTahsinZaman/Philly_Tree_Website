@@ -13,6 +13,10 @@ section {
   position: relative;
 }
 
+#btnMenu {
+  display: none;
+}
+
 #preloader {
   position: fixed;
   top: 0;
