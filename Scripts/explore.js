@@ -1,3 +1,5 @@
+var s = skrollr.init();
+
 //Intro menu
 $(function () {
   $("#btnMenu").click(function () {
