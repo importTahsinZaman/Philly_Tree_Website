@@ -21,7 +21,7 @@ section {
   position: fixed;
   top: 0;
   left: 0;
-  background: #000 url(loading2.gif) no-repeat center center;
+  background: #000 url(../Videos/loading.gif) no-repeat center center;
   background-size: 10%;
   height: 100vh;
   width: 100%;
