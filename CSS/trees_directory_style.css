@@ -138,7 +138,7 @@ p {
   max-width: 57%;
 }
 
-@media (max-width: 1088px) {
+@media (max-width: 1200px) {
   p {
     font-size: 1.2em;
   }
