@@ -88,17 +88,38 @@ section p {
   width: 100vw;
 }
 
-#sec2 img {
-  flex: 1;
+#sec2 div {
+  flex: 3;
   order: 1;
+  background: url(https://www.gannett-cdn.com/presto/2022/01/11/PWIL/503e37f2-208f-4780-8637-7129498c72a9-_F9PvIRg.jpeg)
+    no-repeat;
+  opacity: 0.7;
   height: 100%;
   width: 62%;
-  padding: 30px;
-  padding-right: 1px;
-  opacity: 0.7;
+  --webkit-background-size: cover;
+  background-size: cover;
+}
+
+.show_on_hover {
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
+
+.show_on_hover p {
+  opacity: 0;
+  color: rgb(205, 14, 157);
+  transition: opacity 0.2s;
+}
+
+.show_on_hover:hover {
+  opacity: 0.4 !important;
+}
+
+.show_on_hover:hover p {
+  opacity: 1;
 }
 
 #sec2 p {
-  flex: 1;
+  flex: 2;
   order: 2;
 }
