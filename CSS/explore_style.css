@@ -15,8 +15,7 @@ section p {
 #top {
   height: 100vh;
   width: 100vw;
-  background: url(https://images.pexels.com/photos/355321/pexels-photo-355321.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
-    no-repeat;
+  background: url(https://pbs.twimg.com/media/EMoYcD9XkAYHEXC.jpg) no-repeat;
   opacity: 0.6;
   --webkit-background-size: cover;
   background-size: cover;
