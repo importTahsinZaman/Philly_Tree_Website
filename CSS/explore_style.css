@@ -9,7 +9,6 @@ section {
 
 section p {
   font-size: 20px;
-  padding: 32px;
 }
 
 #top {
@@ -88,7 +87,7 @@ section p {
   width: 100vw;
 }
 
-#sec2 div {
+#sec2img {
   flex: 3;
   order: 1;
   background: url(https://www.gannett-cdn.com/presto/2022/01/11/PWIL/503e37f2-208f-4780-8637-7129498c72a9-_F9PvIRg.jpeg)
@@ -98,6 +97,8 @@ section p {
   width: 62%;
   --webkit-background-size: cover;
   background-size: cover;
+  top: 0;
+  left: 0;
 }
 
 .show_on_hover {
@@ -105,21 +106,12 @@ section p {
   cursor: pointer;
 }
 
-.show_on_hover p {
-  opacity: 0;
-  color: rgb(205, 14, 157);
-  transition: opacity 0.2s;
-}
-
 .show_on_hover:hover {
-  opacity: 0.4 !important;
+  opacity: 0.48 !important;
 }
 
-.show_on_hover:hover p {
-  opacity: 1;
-}
-
-#sec2 p {
+#sec2 .text {
   flex: 2;
   order: 2;
+  padding: 20px;
 }
