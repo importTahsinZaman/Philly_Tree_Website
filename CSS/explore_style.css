@@ -9,7 +9,7 @@ section {
 }
 
 section p {
-  font-size: 1.4vw;
+  font-size: 1.2em;
 }
 
 #top {
@@ -22,7 +22,7 @@ section p {
 }
 
 #top h1 {
-  font-size: 5vw;
+  font-size: 4em;
   padding: 0;
   opacity: 1;
   color: #c3cfc2;
@@ -157,7 +157,7 @@ section p {
 
 #sec3 p {
   position: relative;
-  padding-top: 90vh;
+  margin-top: 90vh;
 }
 
 #sec4 {
@@ -204,4 +204,25 @@ section p {
   order: 4;
   padding: 10px;
   text-align: center;
+}
+
+@media (max-width: 830px) {
+  #sec2 {
+    flex-direction: column;
+  }
+  #sec2img {
+    width: 100%;
+  }
+  #sec3 {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  #top h1 {
+    font-size: 3em;
+  }
+  section p {
+    font-size: 0.9em;
+  }
 }

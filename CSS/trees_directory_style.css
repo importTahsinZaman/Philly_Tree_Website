@@ -114,6 +114,7 @@ h1 {
 
 .img2 {
   position: absolute;
+  object-fit: cover;
   right: 29.5%;
   top: 1.5%;
   height: 42%;
@@ -123,6 +124,7 @@ h1 {
 
 .img3 {
   position: absolute;
+  object-fit: cover;
   top: 1.5%;
   right: 1%;
   height: 42%;
