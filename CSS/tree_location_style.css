@@ -4,11 +4,13 @@ body {
 #location_table {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
+  table-layout: fixed;
   width: 80%;
 }
 
 #location_table td,
 #location_table th {
+  word-wrap: break-word;
   border: 1px solid #ddd;
   padding: 8px;
 }
@@ -35,4 +37,5 @@ body {
   left: 0;
   width: 40px;
   height: 40px;
+  margin: 15px;
 }
