@@ -106,6 +106,7 @@ function addEntry() {
 
       $.ajax(settings).done(function (response) {
         console.log(response);
+        window.location.reload();
       });
     } else {
       alert("Entry Cancelled");
