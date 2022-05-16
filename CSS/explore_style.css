@@ -3,12 +3,13 @@ body {
 }
 
 section {
-  background-color: black;
-  color: white;
+  /* background-color: #161616; */
+  background-image: url(https://www.designbolts.com/wp-content/uploads/2012/11/Free-black-leather-seamless-photoshop-pattern-free-download.jpg);
+  color: #c3cfc2;
 }
 
 section p {
-  font-size: 20px;
+  font-size: 1.4vw;
 }
 
 #top {
@@ -24,7 +25,7 @@ section p {
   font-size: 5vw;
   padding: 0;
   opacity: 1;
-  color: white;
+  color: #c3cfc2;
   position: absolute;
   left: 50%;
   bottom: 1%;
@@ -78,7 +79,7 @@ section p {
 
 #sec1 p {
   text-align: center;
-  padding: 200px;
+  padding: 15vw;
 }
 
 #sec2 {
@@ -122,7 +123,7 @@ section p {
   width: 100vw;
   padding: 20px;
   padding-bottom: 65px;
-  position: absolute;
+  gap: 22px;
 }
 
 #sec3img1 {
@@ -133,11 +134,6 @@ section p {
   --webkit-background-size: cover;
   background-size: cover;
   opacity: 0.7;
-}
-
-#sec3 p {
-  position: absolute;
-  bottom: 24px;
 }
 
 #sec3img2 {
@@ -157,4 +153,55 @@ section p {
   --webkit-background-size: cover;
   background-size: cover;
   opacity: 0.7;
+}
+
+#sec3 p {
+  position: relative;
+  padding-top: 90vh;
+}
+
+#sec4 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100vw;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+#sec4img1 {
+  flex: 10;
+  order: 1;
+  background: url(https://www.visitphilly.com/wp-content/uploads/2018/02/Shofuso-Japanese-House-ExteriorWater-J.Fusco-2VP-200x1237.jpg)
+    no-repeat;
+  --webkit-background-size: cover;
+  background-size: cover;
+  background-position: 10% 35%;
+  opacity: 0.7;
+}
+
+#sec4img2 {
+  flex: 10;
+  order: 3;
+  background: url(https://philadelphiazoo.org/wp-content/uploads/2020/09/tiger-in-zoo-trail-scaled.jpg)
+    no-repeat;
+  --webkit-background-size: cover;
+  background-size: cover;
+  background-position: 10% 15%;
+  opacity: 0.7;
+}
+
+#sec4p1 {
+  flex: 1;
+  order: 2;
+  padding: 10px;
+  text-align: center;
+}
+
+#sec4p2 {
+  flex: 1;
+  order: 4;
+  padding: 10px;
+  text-align: center;
 }
