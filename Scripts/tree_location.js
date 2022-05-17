@@ -116,3 +116,13 @@ function addEntry() {
     alert("Entry Cancelled");
   }
 }
+
+//Info Box:
+const question_button = document.getElementById("question_button");
+const explain_box = document.getElementById("explain_box");
+question_button.addEventListener("mouseover", function show_info() {
+  explain_box.style.display = "block";
+});
+question_button.addEventListener("mouseout", function show_info() {
+  explain_box.style.display = "none";
+});
