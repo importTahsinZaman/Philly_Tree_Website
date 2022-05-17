@@ -1,15 +1,28 @@
+:root {
+  --secondary-color: rgb(0, 14, 10);
+}
+
 body {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 
 section {
   /* background-color: #161616; */
-  background-image: url(https://www.designbolts.com/wp-content/uploads/2012/11/Free-black-leather-seamless-photoshop-pattern-free-download.jpg);
   color: #c3cfc2;
 }
 
 section p {
   font-size: 1.2em;
+}
+
+.show_on_hover {
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
+
+.show_on_hover:hover {
+  opacity: 0.48 !important;
 }
 
 #top {
@@ -75,6 +88,7 @@ section p {
 
 #sec1 {
   width: 100%;
+  background-image: url(https://www.designbolts.com/wp-content/uploads/2012/11/Free-black-leather-seamless-photoshop-pattern-free-download.jpg);
 }
 
 #sec1 p {
@@ -83,6 +97,7 @@ section p {
 }
 
 #sec2 {
+  background-color: var(--secondary-color);
   display: flex;
   height: 100vh;
   width: 100vw;
@@ -100,15 +115,6 @@ section p {
   background-size: cover;
   top: 0;
   left: 0;
-}
-
-.show_on_hover {
-  transition: opacity 0.2s;
-  cursor: pointer;
-}
-
-.show_on_hover:hover {
-  opacity: 0.48 !important;
 }
 
 #sec2 .text {
@@ -156,57 +162,93 @@ section p {
 }
 
 #sec3 p {
-  position: relative;
+  display: block;
+  position: absolute;
   margin-top: 90vh;
+  background-color: rgb(0, 0, 0);
 }
 
 #sec4 {
+  z-index: 1;
+  background-color: var(--secondary-color);
+  display: flex;
+  height: 200vh;
+  width: 100vw;
+}
+
+#sec4 p {
+  flex: 1;
+  order: 1;
+  margin: 20px;
+  z-index: 1;
+}
+
+#sec4imgs {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  height: 100vh;
-  width: 100vw;
-  padding-left: 200px;
-  padding-right: 200px;
+  flex: 1;
+  order: 2;
+  height: 100%;
 }
 
 #sec4img1 {
-  flex: 10;
+  flex: 12;
   order: 1;
+
+  top: 0;
+
+  margin: 20px;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/e/e9/Shofuso_Spring.jpg)
+    no-repeat;
+  background-position: 80% 50%;
+  --webkit-background-size: cover;
+  background-size: cover;
+}
+
+#sec4img2 {
+  flex: 6;
+  order: 2;
+
+  top: 0;
+
+  margin: 20px;
   background: url(https://www.visitphilly.com/wp-content/uploads/2018/02/Shofuso-Japanese-House-ExteriorWater-J.Fusco-2VP-200x1237.jpg)
     no-repeat;
   --webkit-background-size: cover;
   background-size: cover;
-  background-position: 10% 35%;
-  opacity: 0.7;
 }
 
-#sec4img2 {
-  flex: 10;
+#sec4img3 {
+  flex: 6;
   order: 3;
-  background: url(https://philadelphiazoo.org/wp-content/uploads/2020/09/tiger-in-zoo-trail-scaled.jpg)
+
+  top: 0;
+
+  margin: 20px;
+  background: url(https://myphillypark.org/app/uploads/2016/06/shofuso3.jpg)
     no-repeat;
+  background-position: 50% 50%;
   --webkit-background-size: cover;
   background-size: cover;
-  background-position: 10% 15%;
-  opacity: 0.7;
 }
 
-#sec4p1 {
-  flex: 1;
-  order: 2;
-  padding: 10px;
+#sec5 {
+  z-index: 10;
+  width: 100%;
+  background-image: url(https://www.designbolts.com/wp-content/uploads/2012/11/Free-black-leather-seamless-photoshop-pattern-free-download.jpg);
+}
+#sec5 p {
   text-align: center;
+  padding: 15vw;
+  z-index: 10;
 }
-
-#sec4p2 {
-  flex: 1;
-  order: 4;
-  padding: 10px;
+#sec5 a {
   text-align: center;
+  text-decoration: underline;
+  z-index: 10;
 }
 
-@media (max-width: 830px) {
+@media (max-width: 630px) {
   #sec2 {
     flex-direction: column;
   }
@@ -215,6 +257,18 @@ section p {
   }
   #sec3 {
     flex-direction: column;
+  }
+  #sec3 p {
+    display: block;
+    position: relative;
+    margin-top: 0px;
+    opacity: 1 !important;
+  }
+  #sec4 {
+    flex-direction: column;
+  }
+  #sec4 p {
+    max-height: 40vh !important;
   }
 }
 
