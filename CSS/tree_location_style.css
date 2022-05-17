@@ -1,41 +1,69 @@
-body {
-  background-color: rgb(169, 116, 116);
+* {
+  color: white !important;
 }
+
+body {
+  background-color: black;
+}
+
+#background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-image: url(https://images.pexels.com/photos/1028223/pexels-photo-1028223.jpeg);
+  /* background: linear-gradient(45deg, #1e4e4d, #104217); */
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.7;
+}
+
 #location_table {
-  font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   table-layout: fixed;
   width: 80%;
+  margin: 20px;
+  opacity: 0.6;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+#location_table tr {
+  background-color: rgba(27, 33, 23, 0.855);
 }
 
 #location_table td,
 #location_table th {
   word-wrap: break-word;
-  border: 1px solid #ddd;
   padding: 8px;
 }
 
 #location_table tr:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: rgba(68, 88, 68, 0.382);
 }
 
 #location_table tr:hover {
-  background-color: #ddd;
+  background-color: #647959c4;
 }
 
 #location_table th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #04aa6d;
-  color: white;
+  background-color: #0e3c1b;
+  color: rgb(255, 255, 255);
 }
 
 #add_entry_button {
+  cursor: pointer;
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 40px;
-  height: 40px;
+  border: none;
   margin: 15px;
+
+  padding: 7px 16px;
+  font-size: 24px !important;
+  border-radius: 50%;
+  background-color: rgba(47, 112, 66, 0.666);
 }

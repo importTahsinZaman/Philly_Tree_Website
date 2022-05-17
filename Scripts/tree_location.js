@@ -20,7 +20,8 @@ tl.to(".slider", { y: "-100%", duration: 1.5, delay: 0.1 });
 tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
 
 //Fill Table On Load:
-window.onload = function () {
+start();
+function start() {
   var table = document.getElementById("location_table");
   //Get entries as object:
   var settings = {
@@ -71,7 +72,7 @@ window.onload = function () {
       }
     }
   });
-};
+}
 
 //Add the user's tree location entry:
 function addEntry() {
