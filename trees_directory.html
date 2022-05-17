@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="Images/logo.jpeg" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="CSS/minimum_styles.css" />
     <link rel="stylesheet" href="CSS/trees_directory_style.css" />
     <title>trees@Philly - Directory</title>
@@ -43,7 +49,7 @@
       </div>
     </aside>
 
-    <div class="container">
+    <div class="container" onscroll="hide_input_box()">
       <section id="top">
         <img src="Images/directory-top-background.jpg" alt="" />
         <div class="overlay"></div>
@@ -51,6 +57,33 @@
           <h1>Directory</h1>
           <h2>scroll down</h2>
         </div>
+        <button id="search" onclick="search_button_clicked()">
+          <i class="fa fa-search"></i>
+        </button>
+        <input type="text" oninput="onInput()" id="input" list="species_list" />
+        <datalist id="species_list">
+          <option value="Acer Rubrum"></option>
+          <option value="Acer Saccharum"></option>
+          <option value="Carpinus Caroliniana"></option>
+          <option value="Carya Glabra"></option>
+          <option value="Carya Ovata"></option>
+          <option value="Crataegus Crus-galli"></option>
+          <option value="Fraxinus Americana"></option>
+          <option value="Fraxinus Pennsylvanica"></option>
+          <option value="Gleditsia Triacanthos"></option>
+          <option value="Juniperus Virginiana"></option>
+          <option value="Liquidambar Styraciflua"></option>
+          <option value="Nyssa Sylvatica"></option>
+          <option value="Ostrya Virginiana"></option>
+          <option value="Prunus Virginiana"></option>
+          <option value="Quercus Alba"></option>
+          <option value="Quercus Bicolor"></option>
+          <option value="Quercus Palustris"></option>
+          <option value="Quercus Phellos"></option>
+          <option value="Quercus Rubra"></option>
+          <option value="Quercus Shumardii"></option>
+          <option value="------------------------------------"></option>
+        </datalist>
       </section>
       <section id="acer_rubrum">
         <img class="img1" src="Images/acer_rubrum/acer_rubrum1.jpg" alt="" />

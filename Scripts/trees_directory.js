@@ -1,3 +1,7 @@
+//Hiding Search button in the beginning
+const input = document.getElementById("input");
+input.hidden = true;
+
 // Nav Menu
 $(function () {
   $("#btnMenu").click(function () {
@@ -41,3 +45,26 @@ tl.fromTo(
 );
 
 tl.fromTo("#top .text h2", { opacity: 0 }, { opacity: 1, duration: 0.5 });
+
+//Top Dropdown menu
+function onInput() {
+  try {
+    //In a try catch block to avoid errors when the user is manually editing the input box
+    var val = document.getElementById("input").value;
+    val = val.toLowerCase().replace(" ", "_");
+    document.getElementById(val).scrollIntoView();
+  } catch (err) {}
+}
+
+//Search button
+function search_button_clicked() {
+  input.hidden = !input.hidden;
+}
+
+//Hide dropdown on scroll
+
+function hide_input_box() {
+  if (!input.hidden) {
+    input.hidden = true;
+  }
+}
