@@ -172,6 +172,7 @@ function add_entry() {
 
   if (
     tree_specie != "Select A Species" &&
+    tree_specie != "Err: No Trees Identified" &&
     location != "Select Your Address" &&
     location != "Err: Enable Location Services"
   ) {
