@@ -62,6 +62,17 @@ input.addEventListener(
         prediction[0].className + ": " + prediction[0].probability.toFixed(2);
       labelContainer.innerHTML = classPrediction;
 
+      if (getCookie("idTrees") == null) {
+        setCookie("idTrees", "");
+      }
+
+      var id_trees = getCookie("idTrees");
+
+      if (id_trees.indexOf(prediction[0].className) == -1) {
+        id_trees += prediction[0].className + "#";
+        setCookie("idTrees", id_trees);
+      }
+
       setCookie("tree", prediction[0].className);
       scroll_to_tree(prediction[0].className);
     };

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="Images/logo.jpeg" />
+    <link rel="icon" type="image/png" href="Images/logo.jpg" />
     <link rel="stylesheet" href="CSS/minimum_styles.css" />
     <link rel="stylesheet" href="CSS/tree_location_style.css" />
     <title>trees@Philly - Locate</title>
@@ -49,7 +49,24 @@
         begin!
       </p>
     </div>
-    <button id="add_entry_button" onclick="addEntry()">+</button>
+    <button id="add_entry_button" onclick="show_entry_modal()">+</button>
+    <div id="modal_bg">
+      <div id="add_entry_modal">
+        <h2>Add Your Tree!</h2>
+        <label for="user_tree_specie">Tree Species:</label>
+        <select name="user_tree_specie" id="user_tree_specie">
+          <option hidden>Placeholder</option>
+        </select>
+        <label for="user_location">Location:</label>
+        <select name="ser_location" id="user_location">
+          <option hidden>Placeholder</option>
+        </select>
+        <label for="user_input">Note:</label>
+        <input maxlength="100" name="user_input" id="user_input" type="text" />
+        <button onclick="add_entry()">ADD</button>
+        <span id="modal_close" onclick="close_entry_modal()">x</span>
+      </div>
+    </div>
     <center>
       <table id="location_table">
         <tr>

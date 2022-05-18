@@ -107,6 +107,54 @@ body {
   background-color: rgba(47, 112, 66, 0.666);
 }
 
+#modal_bg {
+  position: fixed;
+  z-index: 9;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.507);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.active {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+#add_entry_modal {
+  position: relative;
+  background-color: rgb(45, 111, 62);
+  width: 30%;
+  height: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+#add_entry_modal button {
+  padding: 10px 30px;
+  background-color: rgb(62, 113, 96);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#modal_close {
+  cursor: pointer;
+  position: absolute;
+  top: 4px;
+  right: 12px;
+  font-weight: bold;
+}
+
 @media (max-width: 426px) {
   td,
   th {

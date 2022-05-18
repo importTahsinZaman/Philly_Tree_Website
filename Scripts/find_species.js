@@ -21,12 +21,12 @@ function scroll_to_tree(class_name) {
 //so that the next time the user goes to the directory page (not through the machine learning model),
 //the directory page will just open up to the cover
 function check_scroll() {
-  if (getCookie("tree") != null && getCookie("tree") != "") {
+  try {
     element_id = getCookie("tree");
     element = document.getElementById(element_id);
     element.scrollIntoView();
     setCookie("tree", "");
-  }
+  } catch {}
 }
 
 check_scroll();
