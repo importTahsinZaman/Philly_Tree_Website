@@ -1,5 +1,5 @@
 * {
-  color: white !important;
+  color: white;
 }
 
 body {
@@ -131,12 +131,23 @@ body {
 #add_entry_modal {
   position: relative;
   background-color: rgb(45, 111, 62);
-  width: 30%;
-  height: 30%;
+  width: 50%;
+  height: 50%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+}
+
+#add_entry_modal input,
+select {
+  background-color: black;
+  border: none;
+  width: 45%;
+}
+
+#add_entry_modal input {
+  height: 45%;
 }
 
 #add_entry_modal button {

@@ -101,8 +101,16 @@ function start() {
 
     for (var i = 0; i < options_list.length; i++) {
       var opt = document.createElement("option");
-      opt.value = options_list[i];
-      opt.innerHTML = options_list[i];
+      opt.value = options_list[i]
+        .replace("_", " ")
+        .replace(/(?:^|\s)\S/g, function (a) {
+          return a.toUpperCase();
+        });
+      opt.innerHTML = options_list[i]
+        .replace("_", " ")
+        .replace(/(?:^|\s)\S/g, function (a) {
+          return a.toUpperCase();
+        });
       tree_select.appendChild(opt);
     }
   } else {
@@ -162,7 +170,11 @@ function add_entry() {
   location = address_select.value;
   note = note_box.value;
 
-  if (tree_specie != "Placeholder" && location != "Placeholder") {
+  if (
+    tree_specie != "Select A Species" &&
+    location != "Select Your Address" &&
+    location != "Err: Enable Location Services"
+  ) {
     close_entry_modal();
     var custom_url = "https://sheetdb.io/api/v1/x7p9bm0vbn488";
     custom_url =
