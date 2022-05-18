@@ -2,6 +2,12 @@
   color: white;
 }
 
+:root {
+  --table_top_header: rgb(39, 39, 39, 0.8);
+  --table_primary_row_color: rgb(27, 27, 27, 0.8);
+  --table_secondary_row_color: rgb(27, 27, 27, 0.8);
+  --table_hover_color: rgba(0, 0, 0, 0.665);
+}
 body {
   background-color: black;
 }
@@ -12,11 +18,12 @@ body {
   height: 100vh;
   left: 0;
   top: 0;
-  background-image: url(https://images.pexels.com/photos/1028223/pexels-photo-1028223.jpeg);
+  background-image: url(https://images.pexels.com/photos/355321/pexels-photo-355321.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
   /* background: linear-gradient(45deg, #1e4e4d, #104217); */
   background-size: cover;
+  background-position: 10% 100%;
   z-index: -1;
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 #question_button {
@@ -27,10 +34,11 @@ body {
   border: none;
   margin: 15px;
 
-  padding: 8px 16px;
-  font-size: 15px !important;
+  padding: 10px 19px;
+  font-size: 18px !important;
   border-radius: 50%;
-  background-color: rgba(149, 197, 163, 0.666);
+  color: rgb(255, 255, 255);
+  background-color: rgba(29, 27, 27, 0.52);
 }
 
 #explain_box {
@@ -58,17 +66,29 @@ body {
   z-index: 6;
 }
 
+#table_container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+  max-height: 80%;
+  top: 10%;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+#table_container::-webkit-scrollbar {
+  display: none;
+}
+
 #location_table {
+  width: 70%;
   border-collapse: collapse;
   table-layout: fixed;
-  width: 80%;
-  margin: 20px;
-  opacity: 0.6;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 1);
 }
 
 #location_table tr {
-  background-color: rgba(27, 33, 23, 0.855);
+  background-color: var(--table_secondary_row_color);
 }
 
 #location_table td,
@@ -78,18 +98,18 @@ body {
 }
 
 #location_table tr:nth-child(even) {
-  background-color: rgba(68, 88, 68, 0.382);
+  background-color: var(--table_primary_row_color);
 }
 
 #location_table tr:hover {
-  background-color: #647959c4;
+  background-color: var(--table_hover_color);
 }
 
 #location_table th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #0e3c1b;
+  background-color: var(--table_top_header);
   color: rgb(255, 255, 255);
 }
 
@@ -104,7 +124,8 @@ body {
   padding: 7px 16px;
   font-size: 24px !important;
   border-radius: 50%;
-  background-color: rgba(47, 112, 66, 0.666);
+  color: rgb(255, 255, 255);
+  background-color: rgba(29, 27, 27, 0.52);
 }
 
 #modal_bg {
@@ -130,20 +151,21 @@ body {
 
 #add_entry_modal {
   position: relative;
-  background-color: rgb(45, 111, 62);
+  background-color: rgb(29, 29, 29);
   width: 50%;
-  height: 50%;
+  height: 55%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  border-radius: 20px;
 }
 
-#add_entry_modal input,
+#add_entry_modal textarea,
 select {
-  background-color: black;
+  background-color: rgb(96, 95, 95);
   border: none;
-  width: 45%;
+  min-width: 45%;
 }
 
 #add_entry_modal input {
@@ -152,7 +174,7 @@ select {
 
 #add_entry_modal button {
   padding: 10px 30px;
-  background-color: rgb(62, 113, 96);
+  background-color: rgb(34, 47, 43);
   color: white;
   border: none;
   cursor: pointer;

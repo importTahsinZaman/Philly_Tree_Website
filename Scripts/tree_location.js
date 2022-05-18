@@ -37,13 +37,17 @@ function getCookie(name) {
 var tree_select = document.getElementById("user_tree_specie");
 var address_select = document.getElementById("user_location");
 var note_box = document.getElementById("user_input");
+
+// var api_url = "https://sheetdb.io/api/v1/uku1my6bfpy4o";
+var api_url = "";
+
 start();
 function start() {
   //Fill Table
   var table = document.getElementById("location_table");
   //Get entries as object:
   var settings = {
-    url: "https://sheetdb.io/api/v1/x7p9bm0vbn488",
+    url: api_url,
     method: "GET",
     timeout: 0,
     headers: {
@@ -59,9 +63,9 @@ function start() {
       var cell2 = row.insertCell(1);
       var cell3 = row.insertCell(2);
 
-      cell1.innerHTML = response[i]["Specie"];
-      cell2.innerHTML = response[i]["Address"];
-      cell3.innerHTML = response[i]["Note"];
+      cell1.innerText = response[i]["Specie"];
+      cell2.innerText = response[i]["Address"];
+      cell3.innerText = response[i]["Note"].toString();
     }
 
     //Sort Table Alphabetically:
@@ -79,7 +83,7 @@ function start() {
         x = rows[i].getElementsByTagName("TD")[0];
         y = rows[i + 1].getElementsByTagName("TD")[0];
 
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+        if (x.innerText.toLowerCase() > y.innerText.toLowerCase()) {
           shouldSwitch = true;
           break;
         }
@@ -106,7 +110,7 @@ function start() {
         .replace(/(?:^|\s)\S/g, function (a) {
           return a.toUpperCase();
         });
-      opt.innerHTML = options_list[i]
+      opt.innerText = options_list[i]
         .replace("_", " ")
         .replace(/(?:^|\s)\S/g, function (a) {
           return a.toUpperCase();
@@ -116,12 +120,11 @@ function start() {
   } else {
     var opt = document.createElement("option");
     opt.value = "Err: No Trees Identified";
-    opt.innerHTML = "Err: No Trees Identified";
+    opt.innerText = "Err: No Trees Identified";
     tree_select.appendChild(opt);
   }
 
   //Set user's location
-  var address;
   const succesfulLookup = (position) => {
     //Turns latitude and longitude values into address
     const { latitude, longitude } = position.coords;
@@ -142,14 +145,14 @@ function start() {
 
     var opt = document.createElement("option");
     opt.value = address;
-    opt.innerHTML = address;
+    opt.innerText = address;
     address_select.appendChild(opt);
   }
 
   function unsuccesfulLookup() {
     var opt = document.createElement("option");
     opt.value = "Err: Enable Location Services";
-    opt.innerHTML = "Err: Enable Location Services";
+    opt.innerText = "Err: Enable Location Services";
     address_select.appendChild(opt);
   }
 
@@ -177,17 +180,16 @@ function add_entry() {
     location != "Err: Enable Location Services"
   ) {
     close_entry_modal();
-    var custom_url = "https://sheetdb.io/api/v1/x7p9bm0vbn488";
-    custom_url =
-      custom_url +
+    api_url =
+      api_url +
       "?Specie=" +
       tree_specie +
       "&Address=" +
       location +
       "&Note=" +
-      note;
+      btoa(note);
     var settings = {
-      url: custom_url,
+      url: api_url,
       method: "POST",
       timeout: 0,
       headers: {

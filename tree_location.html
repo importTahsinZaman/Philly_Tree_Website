@@ -62,20 +62,29 @@
           <option hidden>Select Your Address</option>
         </select>
         <label for="user_input">Note:</label>
-        <input maxlength="100" name="user_input" id="user_input" type="text" />
+        <textarea
+          name="user_input"
+          id="user_input"
+          cols="30"
+          rows="10"
+          maxlength="100"
+        ></textarea>
         <button onclick="add_entry()">ADD</button>
         <span id="modal_close" onclick="close_entry_modal()">x</span>
       </div>
     </div>
-    <center>
-      <table id="location_table">
-        <tr>
-          <th>Tree Species</th>
-          <th>Location</th>
-          <th>Note</th>
-        </tr>
-      </table>
-    </center>
+
+    <div id="table_container">
+      <center>
+        <table id="location_table">
+          <tr>
+            <th>Tree Species</th>
+            <th>Location</th>
+            <th>Note</th>
+          </tr>
+        </table>
+      </center>
+    </div>
   </body>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"

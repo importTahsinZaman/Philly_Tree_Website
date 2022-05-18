@@ -62,7 +62,6 @@ function search_button_clicked() {
 }
 
 //Hide dropdown on scroll
-
 function hide_input_box() {
   if (!input.hidden) {
     input.hidden = true;
