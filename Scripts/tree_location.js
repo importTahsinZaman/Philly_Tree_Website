@@ -187,7 +187,7 @@ function add_entry() {
       "&Address=" +
       location +
       "&Note=" +
-      btoa(note);
+      note;
     var settings = {
       url: api_url,
       method: "POST",
