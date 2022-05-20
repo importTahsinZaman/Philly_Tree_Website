@@ -28,7 +28,7 @@ section p {
 #top {
   height: 100vh;
   width: 100vw;
-  background: url(https://pbs.twimg.com/media/EMoYcD9XkAYHEXC.jpg) no-repeat;
+  background: url(../Images/explore_top.jpeg) no-repeat;
   opacity: 0.6;
   --webkit-background-size: cover;
   background-size: cover;
@@ -88,7 +88,7 @@ section p {
 
 #sec1 {
   width: 100%;
-  background-image: url(https://www.designbolts.com/wp-content/uploads/2012/11/Free-black-leather-seamless-photoshop-pattern-free-download.jpg);
+  background-image: url(../Images/black_leatherbg.jpeg);
 }
 
 #sec1 p {
@@ -106,8 +106,7 @@ section p {
 #sec2img {
   flex: 3;
   order: 1;
-  background: url(https://www.gannett-cdn.com/presto/2022/01/11/PWIL/503e37f2-208f-4780-8637-7129498c72a9-_F9PvIRg.jpeg)
-    no-repeat;
+  background: url(../Images/longwood.jpeg) no-repeat;
   opacity: 0.7;
   height: 100%;
   width: 62%;
@@ -135,8 +134,7 @@ section p {
 #sec3img1 {
   flex: 1;
   order: 1;
-  background: url(https://www.visitphilly.com/wp-content/uploads/2017/12/BartramsGarden_R_Kennedy_10_2200x1237.jpg)
-    no-repeat;
+  background: url(../Images/bartrams.jpg) no-repeat;
   --webkit-background-size: cover;
   background-size: cover;
   opacity: 0.7;
@@ -145,8 +143,7 @@ section p {
 #sec3img2 {
   flex: 1;
   order: 2;
-  background: url(https://www.chanticleergarden.org/images/bloom2022/5_13j.jpg)
-    no-repeat;
+  background: url(../Images/chanticleer.jpg) no-repeat;
   --webkit-background-size: cover;
   background-size: cover;
   opacity: 0.7;
@@ -154,8 +151,7 @@ section p {
 #sec3img3 {
   flex: 1;
   order: 3;
-  background: url(https://statesymbolsusa.org/sites/statesymbolsusa.org/files/primary-images/Morris-ArboretumGardensPA.jpg)
-    no-repeat;
+  background: url(../Images/morris.jpg) no-repeat;
   --webkit-background-size: cover;
   background-size: cover;
   opacity: 0.7;
@@ -198,8 +194,7 @@ section p {
   top: 0;
 
   margin: 20px;
-  background: url(https://upload.wikimedia.org/wikipedia/commons/e/e9/Shofuso_Spring.jpg)
-    no-repeat;
+  background: url(..Images/shofuso.jpg) no-repeat;
   background-position: 80% 50%;
   --webkit-background-size: cover;
   background-size: cover;
@@ -212,8 +207,7 @@ section p {
   top: 0;
 
   margin: 20px;
-  background: url(https://www.visitphilly.com/wp-content/uploads/2018/02/Shofuso-Japanese-House-ExteriorWater-J.Fusco-2VP-200x1237.jpg)
-    no-repeat;
+  background: url(../Images/shofuso2.jpg) no-repeat;
   --webkit-background-size: cover;
   background-size: cover;
 }
@@ -225,8 +219,7 @@ section p {
   top: 0;
 
   margin: 20px;
-  background: url(https://myphillypark.org/app/uploads/2016/06/shofuso3.jpg)
-    no-repeat;
+  background: url(../Images/shofuso3.jpg) no-repeat;
   background-position: 50% 50%;
   --webkit-background-size: cover;
   background-size: cover;
@@ -235,7 +228,7 @@ section p {
 #sec5 {
   z-index: 10;
   width: 100%;
-  background-image: url(https://www.designbolts.com/wp-content/uploads/2012/11/Free-black-leather-seamless-photoshop-pattern-free-download.jpg);
+  background-image: url(../Images/black_leatherbg.jpeg);
 }
 #sec5 p {
   text-align: center;
