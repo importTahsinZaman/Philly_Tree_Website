@@ -194,7 +194,7 @@ section p {
   top: 0;
 
   margin: 20px;
-  background: url(..Images/shofuso.jpg) no-repeat;
+  background: url(../Images/shofuso.jpg) no-repeat;
   background-position: 80% 50%;
   --webkit-background-size: cover;
   background-size: cover;
