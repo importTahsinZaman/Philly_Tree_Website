@@ -38,8 +38,8 @@ var tree_select = document.getElementById("user_tree_specie");
 var address_select = document.getElementById("user_location");
 var note_box = document.getElementById("user_input");
 
-// var api_url = "https://sheetdb.io/api/v1/uku1my6bfpy4o";
-var api_url = "";
+var api_url = "https://sheetdb.io/api/v1/uku1my6bfpy4o";
+// var api_url = "";
 
 start();
 function start() {

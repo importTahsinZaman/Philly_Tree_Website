@@ -152,7 +152,9 @@ body {
 #add_entry_modal {
   position: relative;
   background-color: rgb(29, 29, 29);
-  width: 50%;
+  width: fit-content;
+  min-width: 50%;
+  padding: 10px;
   height: 55%;
   display: flex;
   justify-content: space-around;
@@ -193,6 +195,9 @@ select {
   th {
     font-size: 14px;
   }
+}
+
+@media (max-width: 800px) {
   #explain_box {
     max-width: 60%;
   }
